@@ -1,5 +1,5 @@
 """
-URL configuration for not_my_tennis_club project.
+URL configuration for my_tennis_club project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.2/topics/http/urls/
@@ -15,11 +15,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import include, path
-from . import views
+from django.urls import path, include
 
 urlpatterns = [
-    path('members/', views.members, name='members'),
-    path('', include('members.urls')),
+    path('', include('memebrs.urls')),
     path('admin/', admin.site.urls),
 ]
