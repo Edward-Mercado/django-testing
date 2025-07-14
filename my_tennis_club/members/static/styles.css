@@ -1,0 +1,28 @@
+body {
+    background-color: #C1F8FA;
+    color: #1C4547;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+ul a:hover span {
+    color: rgb(35, 112, 255) !important; 
+}
+
+.div2 {
+   background-color: #7fd8db;
+   border-color: #0e2233;
+   border-width: 5px;
+   border-style: solid;
+   padding: 3px;
+   color: #1C4547;
+   font-family: Verdana, Geneva, Tahoma, sans-serif 
+}
+
+a {
+    color: #041320;
+    font-family: 'Times New Roman', Times, serif;
+}
+a:hover {
+    color: #0a3fb1;
+    font-family: 'Times New Roman', Times, sans-serif;
+}

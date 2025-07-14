@@ -1,10 +1,17 @@
 <html>
 <body>
-
-<h1>Hello World!</h1>
-<div style="background-color: gray">
-<p>Welcome to my first Django project!</p>
+<head> 
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<h1> some people </h1>
+<div class="div2">
+<p> members, man </p>
+<ul>
+{% for x in mymembers %}
+ <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a></li>
+{% endfor %}
+</ul> 
 </div>
-
 </body>
 </html>
