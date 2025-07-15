@@ -1,17 +1,18 @@
-<html>
-<body>
-<head> 
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
-</head>
-<h1> some people </h1>
-<div class="div2">
-<p> members, man </p>
-<ul>
-{% for x in mymembers %}
- <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a></li>
-{% endfor %}
-</ul> 
-</div>
-</body>
-</html>
+{% extends "master.html" %}
+
+{% block title %}
+  My Tennis Club - List of all members
+{% endblock %}
+
+
+{% block content %}
+  <h1>Members</h1>
+  
+  <p><a href="/">HOME</a></p>
+
+  <ul>
+    {% for x in mymembers %}
+      <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}
